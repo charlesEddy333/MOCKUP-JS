@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+
+    <script>
+
+        function renderApp(){
+            document.getElementById("demo").innerHTML ="Welcome";
+        }
+
+
+ 
+
+        function renderLogin(){
+            document.getElementById("demo").innerHTML ="Please log in";
+        }
+
+        let autenticated = false;
+        if (autenticated){
+            renderApp();
+
+        }else{
+            renderLogin();
+        }
+
+       auntenticated ? renderApp() : renderLogin();
+
+    </script>
+    
+</body>
+</html>

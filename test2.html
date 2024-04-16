@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <p id="dem"></p>
+
+    <p id="dem1"></p>
+
+
+    <p id="dem2"></p>
+
+
+
+
+    <script type="module">
+        import {name , age} from "./js/Employees.js";
+        import message from "./js/message.js";
+
+       document.getElementById("dem").innerHTML = "my name is" + name;
+       document.getElementById("dem1").innerHTML = "my age is" + age;
+       document.getElementById("dem2").innerHTML = message();
+
+    </script>
+    
+</body>
+</html>
